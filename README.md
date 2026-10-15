@@ -1,103 +1,115 @@
-# Groww-Stock-Web-Scraping-EDA
-A Python-based web scraping and Exploratory Data Analysis (EDA) project on Groww stocks. Uses Requests and BeautifulSoup to extract stock names, URLs, and available stock market information, and Pandas, NumPy, Matplotlib, and Seaborn for data cleaning, statistical analysis, and visualization.
+# 📈 Web Scraping and Stock Market Data Analysis
 
-# Groww-Stock-Web-Scraping-EDA
-
-**Python-based Web Scraping and Exploratory Data Analysis (EDA) project focused on stock information available on Groww.**
-
-## 📊 Groww Stock Market Web Scraping and EDA
-
-A Python-based data analytics project designed to collect available stock information from Groww and explore the data through cleaning, statistical analysis, and visualizations.
+A Python-based web scraping and exploratory data analysis project that collects stock market information from Groww and transforms it into structured data for analysis and visualization.
 
 ## 🎯 Project Overview
 
-This project uses web scraping to collect stock names, stock-page URLs, and available stock-market information from Groww. The collected data is organized and analyzed to understand data distributions, compare financial metrics, and explore relationships between selected stock variables.
+This project uses web scraping techniques to extract stock-related information from [Groww](https://groww.in/stocks), organize the collected data into a Pandas DataFrame, and analyze stock market metrics using Python.
+
+The project focuses on understanding stock prices, market capitalization, trading volume, financial ratios, and price movements through statistical analysis and visualizations.
 
 ## 🔍 Key Analysis
 
-- Scraping stock names and stock-page URLs from Groww
-- Extracting available stock metrics from individual stock pages
-- Data cleaning and numeric data conversion
-- Missing-value and duplicate checks
-- Univariate analysis using histograms and boxplots
-- Bivariate analysis using scatter plots
-- Multivariate analysis using a correlation matrix and heatmap
-- Comparing stocks by selected metrics, including market capitalization, percentage change, and ROE
+- Web Scraping of Stock Information from Groww
+- Extraction of Stock Names and Stock URLs
+- Collection and Structuring of Stock Market Data
+- Data Cleaning and Missing Value Analysis
+- Duplicate Record Detection
+- Data Quality Checks and Validation
+- Univariate Analysis of Stock Market Metrics
+- Bivariate Analysis of Financial Variables
+- Multivariate Analysis and Correlation Analysis
+- Identification of Top Stocks by Market Capitalization
+- Analysis of Top Gainers and Losers by Percentage Change
+- Ranking Stocks by Return on Equity (ROE)
 
-## 🛠️ Tools & Skills
+## 🛠️ Tools & Technologies
 
-- Python
-- Requests
-- BeautifulSoup
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
-- Web Scraping
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Statistical Analysis
-- Data Visualization
+- **Python** — Data collection and analysis
+- **Requests** — Sending HTTP requests to retrieve webpage content
+- **Beautiful Soup** — Parsing HTML and extracting stock information
+- **Pandas** — Data manipulation and analysis
+- **NumPy** — Numerical operations
+- **Matplotlib** — Data visualization
+- **Seaborn** — Statistical visualization
+- **Jupyter Notebook** — Interactive development and analysis
 
-## 📈 Data Fields & Metrics
+## 📊 Key Metrics Analyzed
 
-Depending on the information available on Groww pages, the notebook may collect or analyze fields such as:
-
-- Stock name and stock URL
-- Current price and daily percentage change
-- 52-week high and 52-week low
-- Opening price and previous close
-- Trading volume and market capitalization
+- Current Stock Price
+- Price Change and Percentage Change
+- 52-Week High and Low
+- Opening Price and Previous Closing Price
+- Trading Volume
+- Market Capitalization
 - Return on Equity (ROE)
-- P/E ratio, EPS, and P/B ratio
-- Dividend yield, industry P/E, book value, debt-to-equity ratio, and face value
+- Price-to-Earnings (P/E) Ratio
+- Earnings Per Share (EPS)
+- Price-to-Book (P/B) Ratio
+- Dividend Yield
+- Industry P/E Ratio
+- Book Value
+- Debt-to-Equity Ratio
+- Face Value
 
-The exact fields available depend on the page response when the notebook runs. Some fields may contain missing values.
+## 📈 Visualizations
+
+The project includes multiple visualizations to explore stock market data and relationships between financial variables.
+
+- Histograms for understanding data distributions
+- Box plots for identifying potential outliers
+- Scatter plots for analyzing relationships between financial metrics
+- Correlation heatmap for examining relationships among numerical variables
+- Market capitalization vs. trading volume analysis
+- Return on Equity vs. P/E ratio analysis
+- Stock price vs. market capitalization analysis
+- Top 10 stocks by market capitalization
+- Top 10 stocks with the highest and lowest percentage changes
+- Top 10 stocks ranked by Return on Equity
 
 ## 📂 Project Files
 
-- `Web Scaraping Project.ipynb` — Jupyter Notebook containing the scraping and EDA workflow
+- `Web Scaraping Project.ipynb` — Jupyter Notebook containing web scraping, data cleaning, analysis, and visualizations
 - `README.md` — Project documentation
 
-## ▶️ How to Run
+## 🚀 How to Run the Project
 
-**Step 1: Clone or download this repository.**
+1. Clone or download this repository.
+2. Open the project folder in Jupyter Notebook.
+3. Install the required Python libraries:
 
-**Step 2: Install the required libraries.**
+   ```bash
+   pip install requests beautifulsoup4 pandas numpy matplotlib seaborn openpyxl
+   ```
 
-```bash
-pip install requests beautifulsoup4 pandas numpy matplotlib seaborn jupyter
-```
+4. Open `Web Scaraping Project.ipynb`.
+5. Run the notebook cells in sequence.
+6. Review the scraped stock data, data quality checks, analysis, and visualizations.
 
-**Step 3: Start Jupyter Notebook.**
+**Note:** An active internet connection is required to scrape live webpage content. The website's HTML structure or access restrictions may change, so scraping code may need updates.
 
-```bash
-jupyter notebook
-```
+## 🎯 Learning Outcomes
 
-**Step 4:** Open `Web Scaraping Project.ipynb`.
+This project helped develop practical skills in:
 
-**Step 5:** Run the notebook cells from top to bottom to perform scraping and analysis.
+- Web scraping and HTML parsing
+- Data collection and extraction
+- Data cleaning and preprocessing
+- Exploratory data analysis (EDA)
+- Statistical analysis and visualization
+- Financial metric interpretation
+- Python programming and Jupyter Notebook workflows
 
-## 🎯 Learning Outcome
+## ⚠️ Disclaimer
 
-This project helps build practical skills in Python-based web scraping, data collection, data cleaning, exploratory data analysis, statistical interpretation, and data visualization. It also demonstrates how scraped stock-market information can be organized to explore patterns and relationships between financial metrics.
-
-## ⚠️ Important Notes
-
-- This is an educational data-analysis project, not investment advice.
-- Results reflect the data available when the notebook is executed and may change over time.
-- Groww's page structure or access policies may change and affect scraping.
-- Use responsible request rates and respect the website's terms and applicable policies.
-- Validate scraped values before using them for financial decisions.
+This project is intended for educational and analytical purposes only. Stock market data may change over time, and the results should not be considered financial or investment advice. Please respect the source website's terms of service, robots.txt rules, and applicable access restrictions when scraping data.
 
 ## 👩‍💻 Author
 
-**SHAIK. SHARMILA**
+**Sharmila**
 
-**GitHub Repository:** https://github.com/sk-sharmila01/Groww-Stock-Web-Scraping-EDA
+Data Science | Data Analytics | Artificial Intelligence
 
-**Skills:** Data Analytics | Python | Web Scraping | EDA
+---
 
 ⭐ If you find this project useful, feel free to explore the notebook and share your feedback.
